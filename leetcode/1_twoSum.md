@@ -59,7 +59,7 @@ return {};
 - 第一轮循环，把所有nums中的值放入map中
 - 然后再一轮循环，使用temp.find(result)，寻找目标值
 ``` cpp
-std::unordered_map < int, int > temp;
+std::map < int, int > temp;
 for(int i = 0; i < nums.size(); i++)
 {
     temp.insert( make_pair( nums.at(i), i ) ); 
