@@ -33,9 +33,9 @@
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-        if(nums.size()==0)
+        if(nums.size() < 2)// 小于2个，就不用操作了，直接返回
         {
-            return 0;
+            return nums.size();
         }
         // i: 指针1
         // j: 指针2
