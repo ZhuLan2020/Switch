@@ -106,7 +106,7 @@ public:
             return 0;
         }
 
-		// 不管分界点的位置, 直接整个数组开始二分查找
+	// 不管分界点的位置, 直接整个数组开始二分查找
         int start = 0, end = nums.size()-1, res = -1;
         while(start <= end)
         {
