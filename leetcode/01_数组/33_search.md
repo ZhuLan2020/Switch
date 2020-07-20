@@ -69,7 +69,7 @@ public:
         // 以下为二分法的典型写法, 需要熟练使用
         while(start <= end)
         {
-            size_t mid = (start+end)/2;
+            size_t mid = start+(end-start)/2;
             if(target == nums[mid])
             {
                 res = mid;
@@ -110,7 +110,7 @@ public:
         int start = 0, end = nums.size()-1, res = -1;
         while(start <= end)
         {
-            int mid = (start + end)/2;
+            int mid = start+(end-start)/2; // 两种写法,mid = (start+end)/2 和 mid = start+(end-start)/2.第一种写法可能因数值过大,造成溢出；第二种写法的溢出概率就要降低了
             // 总共有这么几种情况:
             // 1.target == nums[mid], 找到了, 直接返回索引
             // 2.如果mid左侧有序(右侧有混乱)
