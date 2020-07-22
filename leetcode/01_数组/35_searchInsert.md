@@ -66,3 +66,20 @@ public:
 };
 
 ```
+## 简洁解法: 使用STL
+- lower_bound(), 返回大于或等于val的第一个元素位置
+- 其实底层代码也是用二分查找实现的, 因此仅仅适用于有序数列
+``` cpp
+class Solution {
+public:
+    int searchInsert(vector<int>& nums, int target) {
+        return lower_bound(nums.begin(), nums.end(), target) - nums.begin();
+    }
+};
+```
+
+## 遗留
+- STL中二分查找三兄弟: 待学习
+	- lower_bound()
+	- upper_bound()
+	- binary_search())
