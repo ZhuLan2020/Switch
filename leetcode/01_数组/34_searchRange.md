@@ -170,9 +170,8 @@ public:
             return {-1,-1};
         }
 
-        int first = (findFirst(nums, target) == -1)? -1:findFirst(nums, target);
-        int last =  (findLast(nums, target) == -1) ? -1:findLast (nums, target);
-
+        int first = findFirst(nums, target);
+        int last =  findLast (nums, target);
         return {first, last};
     }
 
