@@ -1,0 +1,16 @@
+// 将设置放入此文件中以覆盖默认设置
+{
+    "http.proxy": "http://proxy.zte.com.cn:80",
+    "http.proxyStrictSSL": false,
+    "files.autoSave":"onFocusChange",
+    "editor.fontSize": 20,
+    "workbench.colorTheme": "Monokai Pro"
+
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#585858f5",
+        "editor.selectionHighlightBackground": "#585858c9",
+        "editorLineNumber.foreground": "#db9c3d",
+    },
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "all"
+}
